@@ -27,7 +27,6 @@ export default function HeroSection() {
             bg-black min-h-[80vh]
         "
     >
-      {/* Left: Text Content */}
       <div className="w-full md:w-[516px] flex flex-col items-start z-10">
         <h1 className="text-[25px] md:text-[35px] font-extrabold md:font-bold font-urbanist leading-7 md:leading-10 mb-3 text-white text-center md:text-left">
           Want to Turn Social Media Into a Profitable Career?
@@ -54,7 +53,7 @@ export default function HeroSection() {
           <ConsentText />
         </div>
       </div>
-      {/* Right: Mobile Mockup */}
+
       <div className="w-full md:w-[56%] flex justify-center mb-8 md:mb-0 md:-ml-16 z-0">
         <MobileMockup />
       </div>

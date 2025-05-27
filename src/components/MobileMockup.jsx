@@ -1,27 +1,18 @@
-'use client';
+"use client";
+
+import Image from "next/image";
 
 export default function MobileMockup() {
   return (
     <div className="relative flex justify-center items-center w-[390px] h-[426px] md:w-[666px] md:h-[679px]">
-      <img
+      <Image
         src="/images/phone-mockup.png"
         alt="Mobile App Mockup"
-        className="block"
-        style={{
-          width: '390px',
-          height: '426px',
-        }}
-        srcSet="/images/phone-mockup.png 666w"
+        fill
         sizes="(min-width: 768px) 666px, 390px"
+        className="object-contain"
+        priority={false}
       />
-      <style jsx>{`
-        @media (min-width: 768px) {
-          img[alt="Mobile App Mockup"] {
-            width: 666px !important;
-            height: 679px !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }
